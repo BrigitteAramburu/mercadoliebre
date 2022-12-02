@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+    <link rel="stylesheet" href="Css/estilos.css">
+    <enlace rel="preconectar" href="https://fonts.googleapis.com">
+      <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
+      <enlace href="https: //fonts.googleapis.com/css2? family= Nanum+Gothic & display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Mercado liebre</title>
+</head>
+<body>
+
+  <header>
+    <div>
+      <img class="logo" src="Img/mercado-liebre.png" alt="liebre">
+      <br>
+      <a class="productos" href="">Todos los productos<i class='bx bxs-hand-down'></i></a>
+    </div>
+
+    <p class="opiniones"><i class='bx bxs-book-open'></i> Todas las opiniones en un solo lugar </p>
+    
+
+    <nav class="encabezado">
+      <a href="registro.html">Crea tu cuenta<i class='bx bxs-id-card'></i></a>
+      <button href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Ingresá<i class='bx bxs-log-in'></i></button>
+    </nav> 
+    <div>
+         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form action="">
+              <div>
+                  <img src="Img/mercado-liebre.png" alt="liebre">
+              </div>
+              <div>
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" name="Nombre" id="Nombre">
+              </div>
+              <div>
+                  <label for="email">Email:</label>
+                  <input type="email" name="email" id="email">
+              </div>
+              <div>
+                  <label for="password">Contraseña:</label>
+                  <input type="password" name="password" id="password">
+              </div>
+            </form>
+          </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Ingresar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Img/banner1.jpg" class="d-block w-100" alt="Banner1">
+          </div>
+          <div class="carousel-item">
+            <img src="Img/banner2.jpg" class="d-block w-100" alt="Banner2">
+          </div>
+          <div class="carousel-item">
+            <img src="Img/banner3.webp" class="d-block w-100" alt="Banner3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="productitos">
+      <h2>Productos</h2>
+      <div class="contenedor-de-productos">
+        <div>
+          <img src="Img/cafetera.jpg" class="productos" alt="cafetera">
+          <h3>Saeco Aulika Evo Focus Maquina De Cafe Italiana</h3>
+          <a href="">Comprar</a>
+        </div>
+
+        <div>
+          <img src="Img/computador.webp" class="productos" alt="computador">
+          <h3>Msi Raider Ge77hx I9</h3>
+          <a href="">Comprar</a>
+        </div>
+
+        <div>
+          <img src="Img/televisor.jpg" class="productos" alt="televisor">
+          <h3>Samsung 98 Qn90a Neo Qled 4k Smart Tv </h3>
+          <a href="">Comprar</a>
+        </div>
+
+        <div>
+          <img src="Img/celular.jpg" class="productos" alt="celular">
+          <h3>Samsung Galaxy S22 Ultra 256gb 12gb Ram </h3>
+          <a href="">Comprar</a>
+        </div>
+      </div>
+    </section>
+    <section class="productos2">
+      <h2>Productos destacados</h2>
+      <div>
+       <img class="producto2-1" src="Img/celular2.webp" alt="celular2">
+       <h3>Apple iPhone 14 (128 GB)</h3>
+      </div>
+      <div>
+        <img class="producto2" src="Img/televisor2.webp" alt="televisor2">
+        <h3>Smart TV LG AI ThinQ 86UN8000PSB LED 4K 86"</h3>
+      </div>
+    </section>
+  </main> 
+
+  <footer class="footer">
+    <div class="row">
+      <div class="col-4">
+        <h2>Seguinos</h2>
+        <ul>
+          <li> <a href="https://www.facebook.com/MercadoLibre"><i class='bx bxl-facebook-square'></i>Facebook</a></li>
+          <li><a href="https://www.youtube.com/user/mercadolibre"><i class='bx bxl-youtube' ></i>Youtube</a></li>
+          <li><a href="https://www.instagram.com/mercadolibre.arg/"><i class='bx bxl-instagram' ></i>Instagram</a></li>
+          <li><a href="https://www.linkedin.com/company/mercadolibre/"><i class='bx bxl-linkedin-square'></i>Linkedln</a></li>
+        </ul>
+       </div>
+       <div class="col-4">
+        <h2>Otros servicios</h2>
+        <ul>
+          <li> <a href="https://www.mercadopago.com.ar/">Mercadoliebre Pago</a></li>
+          <li><a href="https://www.mercadoshops.com.ar/">Mercadoliebre Shops</a></li>
+          <li><a href="https://envios.mercadolibre.com.ar/">Liebre Envios</a></li>
+          <li><a href="https://ads.mercadolibre.com.ar/">Mercado Ads</a></li>
+        </ul>
+      </div>
+      <div class="col-4">
+        <div>
+          <h2>Trabaja con nosotros</h2>
+          <input type="text">
+          <button type="button" class="btnbtn-primary">Enviar</button>
+        </div>
+     </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
